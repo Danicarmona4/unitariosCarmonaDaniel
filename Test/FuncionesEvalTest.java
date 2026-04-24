@@ -16,10 +16,10 @@ class FuncionesEvalTest {
     // 2. Tests para getTipoClima
     @Test
     void testGetTipoClima() {
-        assertEquals("FRIO", FuncionesEval.getTipoClima(5.0));      // <= 10
-        assertEquals("NUBLADO", FuncionesEval.getTipoClima(15.0));  // > 10 y <= 20
-        assertEquals("CALUROSO", FuncionesEval.getTipoClima(25.0)); // > 20 y <= 30
-        assertEquals("TROPICAL", FuncionesEval.getTipoClima(35.0)); // > 30
+        assertEquals("FRIO", FuncionesEval.getTipoClima(5.0));      //<= 10
+        assertEquals("NUBLADO", FuncionesEval.getTipoClima(15.0));  //> 10 y <= 20
+        assertEquals("CALUROSO", FuncionesEval.getTipoClima(25.0)); //> 20 y <= 30
+        assertEquals("TROPICAL", FuncionesEval.getTipoClima(35.0)); //> 30
     }
 
     // 3. Tests para invertirArray
