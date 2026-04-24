@@ -36,9 +36,9 @@ public class FuncionesEval {
         String res="ERROR";
         if(temperatura<=10){
             res="FRIO";
-        } else if(temperatura>10 && temperatura<=20){
+        } else if( temperatura<=20){
             res="NUBLADO";
-        } else if(temperatura>20 && temperatura<=30){
+        } else if(temperatura<=30){
             res="CALUROSO";
         } else if(temperatura>30){
             res="TROPICAL";
@@ -53,9 +53,15 @@ public class FuncionesEval {
      * @return Cantidad de veces que aparece el número en el array.
      */
     public static int contarApariciones(int[] numeros, int valor) {
-        return 0;
+        if (numeros == null) return 0; // Manejo básico para evitar errores
+        int contador = 0;
+        for (int num : numeros) {
+            if (num == valor) {
+                contador++;
+            }
+        }
+        return contador;
     }
-
 
     /**
      * Invierte el orden de los elementos de un array de enteros.
@@ -92,8 +98,18 @@ public class FuncionesEval {
      * @throws IllegalArgumentException Si el array está vacío o es null.
      */
     public static int encontrarMayor(int[] array) {
-        return 0;
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException("El array no puede estar vacío ni ser null");
+        }
+        int mayor = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > mayor) {
+                mayor = array[i];
+            }
+        }
+        return mayor;
     }
+
 
 
 }
