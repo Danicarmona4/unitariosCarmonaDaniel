@@ -5,7 +5,7 @@ public class FuncionesEval {
      * Un número es un número perfecto cuando la suma e sus divisores
      * salvo él mismo da como resultado el propio número. Por ejemplo,
      * los divisores del 6 son 1,2,3 y 6, si sumamos todos los números salvo el 6
-     * 1+2+3= 6 que es el propio número. Los primeros números perfectos son
+     * 1+2+3= 6 que es el propio número. Los primeros son
      * el 6, el 28 y 8128
      * @param num el número a comprobar
      * @return true en caso de ser un número perfecto y false en caso contrario
